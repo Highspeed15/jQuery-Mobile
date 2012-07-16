@@ -1,0 +1,2164 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>Mobile GUI</title>
+	
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+</head>
+<body>
+	<!-- <div data-role="panel" data-id="menu" data-hash="crumbs" data-context="a#default"> -->
+
+		<!-- Start der ersten Seite -->
+        <div data-role="page" id="home-default" data-add-back-btn="false">
+
+    		<div data-role="header">
+            	<h1>Home</h1>
+                <a href="#themeswitcher-home-default" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="star">Themes</a>
+            </div> <!-- /header --> 
+             
+			<div data-role="content"> <!-- Inhaltsbereich -->
+            	<a href="#home-default" data-role="button" data-transition="pop" data-icon="arrow-r">Network</a>              
+                <a href="#mobility-default" data-role="button" data-transition="pop" data-icon="arrow-r">Mobility</a>
+                <a href="#ethernet-default" data-role="button" data-transition="pop" data-icon="arrow-r">Ethernet</a> 
+                <a href="#wlan-tab1-default" data-role="button" data-transition="pop" data-icon="arrow-r">Wlan</a> 
+                <a href="#home-default" data-role="button" data-transition="pop" data-icon="arrow-r">Bluetooth</a>  
+                <a href="#umts-tab1-default" data-role="button" data-transition="pop" data-icon="arrow-r">UMTS</a>  
+                <a href="#experiments-tab1-default" data-role="button" data-transition="pop" data-icon="arrow-r">Experiments</a> 
+                <a href="#home-default" data-role="button" data-transition="pop" data-icon="arrow-r">Debug</a> 
+            </div> <!-- /content --> 
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#home-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-icon="gear">Menu</a></li>
+                    	<li><a href="#mhome-default" data-icon="delete">Exit</a></li>
+                    </ul> <!-- -->
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+    	</div> <!-- /home-default --> 
+
+		<!-- Start der ersten Seite -->
+        <div data-role="page" id="home-a" data-add-back-btn="false" data-theme="a">
+
+    		<div data-role="header">
+            	<h1>Home</h1>
+                <a href="#themeswitcher-home-a" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="star">Themes</a>
+            </div> <!-- /header --> 
+             
+			<div data-role="content"> <!-- Inhaltsbereich -->  
+            	<a href="#home-a" data-role="button" data-transition="pop" data-icon="arrow-r">Network</a>              
+                <a href="#mobility-a" data-role="button" data-transition="pop" data-icon="arrow-r">Mobility</a> 
+                <a href="#ethernet-a" data-role="button" data-transition="pop" data-icon="arrow-r">Ethernet</a> 
+                <a href="#wlan-tab1-a" data-role="button" data-transition="pop" data-icon="arrow-r">Wlan</a> 
+                <a href="#home-a" data-role="button" data-transition="pop" data-icon="arrow-r">Bluetooth</a> 
+                <a href="#umts-tab1-a" data-role="button" data-transition="pop" data-icon="arrow-r">UMTS</a> 
+                <a href="#experiments-tab1-a" data-role="button" data-transition="pop" data-icon="arrow-r">Experiments</a> 
+                <a href="#home-a" data-role="button" data-transition="pop" data-icon="arrow-r">Debug</a> 
+            </div> <!-- /content --> 
+
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#home-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Menu</a></li>
+                    	<li><a href="#home-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+    	</div> <!-- /home-a --> 
+
+    	<!-- Start der ersten Seite -->
+        <div data-role="page" id="home-b" data-add-back-btn="false" data-theme="b">
+
+    		<div data-role="header">
+            	<h1>Home</h1>
+                <a href="#themeswitcher-home-b" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="star">Themes</a>
+            </div> <!-- /header --> 
+             
+			<div data-role="content"> <!-- Inhaltsbereich --> 
+            	<a href="#home-b" data-role="button" data-transition="pop" data-icon="arrow-r">Network</a>              
+                <a href="#mobility-b" data-role="button" data-transition="pop" data-icon="arrow-r">Mobility</a> 
+                <a href="#ethernet-b" data-role="button" data-transition="pop" data-icon="arrow-r">Ethernet</a> 
+                <a href="#wlan-tab1-b" data-role="button" data-transition="pop" data-icon="arrow-r">Wlan</a> 
+                <a href="#home-b" data-role="button" data-transition="pop" data-icon="arrow-r">Bluetooth</a> 
+                <a href="#umts-tab1-b" data-role="button" data-transition="pop" data-icon="arrow-r">UMTS</a> 
+                <a href="#experiments-tab1-b" data-role="button" data-transition="pop" data-icon="arrow-r">Experiments</a> 
+                <a href="#home-b" data-role="button" data-transition="pop" data-icon="arrow-r">Debug</a> 
+            </div> <!-- /content --> 
+            
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#home-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Menu</a></li>
+                    	<li><a href="#home-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+    	</div> <!-- /home-b --> 
+        
+        <!--
+     </div><!-- panel menu 
+     -->
+<!----------------------------------------HOME-Seiten-ENDE---------------------------------------------------------------------->
+        
+        <!-- Start der Setupseite -->
+        <div data-role="page" id="setup-default">
+        
+        	<div data-role="header" data-inline="true">
+            	<h1>Menu</h1>
+				<a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
+                <a href="#" data-rel="back" data-icon="check" class="ui-btn-right">Save</a>
+            </div>
+            
+            <div data-role="content">
+            
+            	 <div data-role="collapsible" data-collapsed="true">
+                 	<h3>Profiles</h3>
+                 	<div data-role="controlgroup">
+            			<ul data-role="listview" data-inset="true"> 
+                			<li> <a href="#setup-default">Ethernet</a></li>
+                    		<li> <a href="#setup-default">WLAN</a></li>
+                    		<li> <a href="#setup-default">UMTS</a></li>
+                    		<li> <a href="#setup-default">Bluetooth</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                
+                <div data-role="collapsible" data-collapsed="true">
+                 	<h3>Experimente</h3>
+                 	<div data-role="controlgroup">
+            			<ul data-role="listview" data-inset="true"> 
+                			<li> <a href="#setup-default" data-transition="pop">New</a></li>
+                			<li> <a href="#setup-default" data-transition="pop">Delete</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+        
+        		<div data-role="collapsible" data-collapsed="true">
+                 	<h3>Network</h3>
+                 	<div data-role="controlgroup">
+            			<ul data-role="listview" data-inset="true"> 
+                			<li> <a href="#setup-default" data-transition="pop">Evaluation</a></li>
+                    		<li> <a href="#setup-default" data-transition="pop">Selection</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                    
+                <div data-role="collapsible" data-collapsed="true">
+                 	<h3>Trigger</h3>
+                 	<div data-role="controlgroup">
+            			<ul data-role="listview" data-inset="true"> 
+                			<li> <a href="#setup-default" data-transition="pop">Select</a></li>
+               	 		</ul>
+                    </div>
+            	</div>    
+                	
+                <div data-role="collapsible" data-collapsed="true">
+                 	<h3>Configuration</h3>
+                 	<div data-role="controlgroup">
+            			<ul data-role="listview" data-inset="true"> 
+                			<li> <a href="#setup-default" data-transition="pop">Properties</a></li>
+               	 		</ul>
+                    </div>
+            	</div>       
+            </div> <!-- /content -->
+        </div> <!-- /home/setup-default --> 
+        
+        <!-- Start der Setupseite -->
+        <div data-role="page" id="setup-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Menu</h1>
+                <a href="#" data-rel="back" data-icon="check" class="ui-btn-right">Save</a>
+            </div>
+            
+            <div data-role="content" data-theme="a">
+            	<div data-role="collapsible" data-collapsed="true" data-theme="a">
+                 	<h3>Profiles</h3>
+                 	<div data-role="controlgroup" data-theme="a">
+            			<ul data-role="listview" data-inset="true" data-theme="a"> 
+                			<li> <a href="#setup-a">Ethernet</a></li>
+                    		<li> <a href="#setup-a">WLAN</a></li>
+                    		<li> <a href="#setup-a">UMTS</a></li>
+                    		<li> <a href="#setup-a">Bluetooth</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                 	<h3>Experimente</h3>
+                 	<div data-role="controlgroup" data-theme="a">
+            			<ul data-role="listview" data-inset="true" data-theme="a"> 
+                			<li> <a href="#setup-a" data-transition="pop">New</a></li>
+                			<li> <a href="#setup-a" data-transition="pop">Delete</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+        
+        		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+                 	<h3>Network</h3>
+                 	<div data-role="controlgroup" data-theme="a">
+            			<ul data-role="listview" data-inset="true" data-theme="a"> 
+                			<li> <a href="#setup-a" data-transition="pop">Evaluation</a></li>
+                    		<li> <a href="#setup-a" data-transition="pop">Selection</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                    
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                 	<h3>Trigger</h3>
+                 	<div data-role="controlgroup" data-theme="a">
+            			<ul data-role="listview" data-inset="true" data-theme="a"> 
+                			<li> <a href="#setup-a" data-transition="pop">Select</a></li>
+               	 		</ul>
+                    </div>
+            	</div>    
+                	
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                 	<h3>Configuration</h3>
+                 	<div data-role="controlgroup" data-theme="a">
+            			<ul data-role="listview" data-inset="true" data-theme="a"> 
+                			<li> <a href="#setup-a" data-transition="pop">Properties</a></li>
+               	 		</ul>
+                    </div>
+            	</div>                  
+            </div> <!-- /content -->
+        </div> <!-- /home/setup-a --> 
+        
+        <!-- Start der Setupseite -->
+        <div data-role="page" id="setup-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Menu</h1>
+                <a href="#" data-rel="back" data-icon="check" class="ui-btn-right">Save</a>
+            </div>
+            
+            <div data-role="content" data-theme="b">
+            
+            	<div data-role="collapsible" data-collapsed="true" data-theme="b">
+                 	<h3>Profiles</h3>
+                 	<div data-role="controlgroup" data-theme="b">
+            			<ul data-role="listview" data-inset="true" data-theme="b"> 
+                			<li> <a href="#setup-b">Ethernet</a></li>
+                    		<li> <a href="#setup-b">WLAN</a></li>
+                    		<li> <a href="#setup-b">UMTS</a></li>
+                    		<li> <a href="#setup-b">Bluetooth</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                
+                <div data-role="collapsible" data-collapsed="true" data-theme="b">
+                 	<h3>Experimente</h3>
+                 	<div data-role="controlgroup" data-theme="b">
+            			<ul data-role="listview" data-inset="true" data-theme="b"> 
+                			<li> <a href="#setup-b" data-transition="pop">New</a></li>
+                			<li> <a href="#setup-b" data-transition="pop">Delete</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+        
+        		<div data-role="collapsible" data-collapsed="true" data-theme="b">
+                 	<h3>Network</h3>
+                 	<div data-role="controlgroup" data-theme="b">
+            			<ul data-role="listview" data-inset="true" data-theme="b"> 
+                			<li> <a href="#setup-b" data-transition="pop">Evaluation</a></li>
+                    		<li> <a href="#setup-b" data-transition="pop">Selection</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+                    
+                <div data-role="collapsible" data-collapsed="true" data-theme="b">
+                 	<h3>Trigger</h3>
+                 	<div data-role="controlgroup" data-theme="b">
+            			<ul data-role="listview" data-inset="true" data-theme="b"> 
+                			<li> <a href="#setup-b" data-transition="pop">Select</a></li>
+               	 		</ul>
+                    </div>
+            	</div>    
+                	
+                <div data-role="collapsible" data-collapsed="true" data-theme="b">
+                 	<h3>Configuration</h3>
+                 	<div data-role="controlgroup" data-theme="b">
+            			<ul data-role="listview" data-inset="true" data-theme="b"> 
+                			<li> <a href="#setup-b" data-transition="pop">Properties</a></li>
+               	 		</ul>
+                    </div>
+            	</div>
+            </div> <!-- /content -->
+        </div> <!-- /home/setup-b -->  
+<!----------------------------------------Setup-Seiten-ENDE---------------------------------------------------------------------->
+     
+        <!-- Start der Farbprofilseite -->
+        <div data-role="page" id="themeswitcher-home-default">
+        	<div data-role="header">
+            	<h1>Theme-Default</h1>
+            </div>
+            <div data-role="content">
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">New Color Profile</li>
+            		<li> <a href="#home-a">A</a></li>
+                    <li> <a href="#home-b">B</a></li>
+                </ul>
+            </div>
+			
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#themeswitcher-home-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#themeswitcher-home-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/themeswitcher-home-default --> 
+        
+        <!-- Start der Farbprofilseite -->
+        <div data-role="page" id="themeswitcher-home-a" data-theme="a">
+        	<div data-role="header" data-theme="a">
+            	<h1>Theme-A</h1>
+            </div>
+            <div data-role="content" data-theme="a">
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">New Color Profile</li>
+                	<li> <a href="#home-default" data-theme="a">Default</a></li>
+                    <li> <a href="#home-b" data-theme="a">B</a></li>
+                </ul>
+            </div>
+			
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#themeswitcher-home-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#themeswitcher-home-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/themeswitcher-home-a --> 
+        
+        <!-- Start der Farbprofilseite -->
+        <div data-role="page" id="themeswitcher-home-b" data-theme="b">
+        	<div data-role="header" data-theme="b">
+            	<h1>Theme-B</h1>
+            </div>
+            <div data-role="content" data-theme="b">
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">New Color Profile</li>
+                	<li> <a href="#home-default" data-theme="b">Default</a></li>
+                    <li> <a href="#home-a" data-theme="b">A</a></li>
+                </ul>
+            </div>
+			
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#themeswitcher-home-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#themeswitcher-home-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/themeswitcher-home-b --> 
+        
+<!----------------------------------------Farbprofil-Seiten-ENDE---------------------------------------------------------------------->   
+
+        <!-- Start der Unterseite Mobility -->
+        <div data-role="page" id="mobility-default">
+        
+        	<div data-role="header">
+            	<h1>Mobility</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#mobility-default" data-icon="back">Undo</a></li>
+						<li><a href="#mobility-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+				<!--<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+					<a href="#mobility-default" data-icon="back" data-role="button"></a>
+					<a href="#mobility-default" data-icon="forward" data-role="button"></a>
+				</div> -->
+            </div>  <!-- /header --> 
+            
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-default">Aktivieren</a></li>
+                        <li><a href="#mobility-dialog-default" data-rel="dialog">Option</a></li>
+                    	<li><a href="#mobility-default">Abbrechen</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+                <div data-role="fieldcontain">
+                	<input type="search" name="searchbar-1" id="searchbar-1" value="Gib einen Suchbegriff ein" /> 
+                </div>
+								<!-- <div data-role="controlgroup" data-type="horizontal"> -->
+                <ul data-role="listview" >
+                	<li data-role="list-divider">Status</li>
+                    <li>Progress Bar</li> 
+                	<li data-role="list-divider" data-type="horizontal">Mobility Management </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>   
+            </div>  <!-- /content -->
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/mobility-default-->
+        
+        <!-- Start der Unterseite Mobility -->
+        <div data-role="page" id="mobility-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Mobility</h1>
+				<a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#mobility-a" data-icon="back">Undo</a></li>
+						<li><a href="#mobility-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            </div>  <!-- /header --> 
+            
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                    	<li><a href="#mobility-a">Aktivieren</a></li>
+                        <li><a href="#mobility-dialog-a" data-rel="dialog">Option</a></li>
+                    	<li><a href="#mobility-a">Abbrechen</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+                <div data-role="fieldcontain">
+                	<input type="search" name="searchbar-2" id="searchbar-2" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div> 
+            		<ul data-role="listview" data-theme="a">
+                    	<li data-role="list-divider">Status</li>
+                    	<li>Progress Bar</li> 
+                		<li data-role="list-divider">Mobility Management</li>
+                		<li>Zeile 1</li>
+                    	<li>Zeile 2</li>
+                    	<li>Zeile 3</li> 
+                	</ul> 
+            </div>  <!-- /content -->
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/mobility-a-->
+        
+        <!-- Start der Unterseite Mobility -->
+        <div data-role="page" id="mobility-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Mobility</h1>
+				<a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#mobility-b" data-icon="back">Undo</a></li>
+						<li><a href="#mobility-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            </div>  <!-- /header --> 
+            
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                    	<li><a href="#mobility-b">Aktivieren</a></li>
+                        <li><a href="#mobility-dialog-b" data-rel="dialog">Option</a></li>
+                    	<li><a href="#mobility-b">Abbrechen</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+                <div data-role="fieldcontain">
+                	<input type="search" name="searchbar-3" id="searchbar-3" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div> 
+            		<ul data-role="listview" data-theme="b">
+                    	<li data-role="list-divider">Status</li>
+                    	<li>Progress Bar</li> 
+                		<li data-role="list-divider">Mobility Management</li>
+                		<li>Zeile 1</li>
+                    	<li>Zeile 2</li>
+                    	<li>Zeile 3</li> 
+                	</ul> 
+            </div>  <!-- /content -->
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/mobility-b-->
+ 
+<!----------------------------------------Mobility-Seiten-ENDE---------------------------------------------------------------------->  
+        
+        <!-- Dialog der Unterseite Mobility -->
+        <div data-role="page" id="mobility-dialog-default">
+        
+        	<div data-role="header">
+            	<h1>Optionsmenü</h1>
+                <a href="#mobility-default" class="ui-btn-right" data-role="button" data-icon="check" >Save</a>
+            </div>
+            
+            <div data-role="content">
+                <ul data-role="listview" >
+                	<li data-role="list-divider">Netzwerkeinstellungen</li>
+                    <li>
+                    	<label for="input5">Netzwerkname:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input6">MAC-Adresse:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input7">Zugangspunkt:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                    </li>
+                    <li>
+                    	<label for="select-choice-3" class="select">Max. Bandbreite:</label>
+						<select name="select-choice-3" id="select-choice-3" data-native-menu="false">
+							<option value="Bandbreite1">10 MHz</option>
+							<option value="Bandbreite2">20 MHz</option>
+							<option value="Bandbreite3">30 MHz</option>
+						</select>
+                    </li>
+                    <li data-role="list-divider">Handover</li>
+                    <li>
+                    	<label for="slider">Wiederholungen:</label>
+						<select name="slider-2" id="slider-2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="select-choice-4" class="select">Zielnetz:</label>
+						<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">Netz1</option>
+							<option value="Netz2">Netz2</option>
+							<option value="Netz3">Netz3</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="input8">Time:</label>
+    					<input type="text" name="input8" id="input8" value="DD/MM/YY HH/MM/SS"  />
+                    </li>
+                </ul>
+            </div> <!-- /content --> 
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-dialog-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-dialog-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+        </div>  <!-- /home/mobility/mobility-dialog-default-->   
+        
+        <!-- Dialog der Unterseite Mobility -->
+        <div data-role="page" id="mobility-dialog-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Optionsmenü</h1>
+                <a href="#mobility-a" class="ui-btn-right" data-role="button" data-icon="check">Save</a>
+            </div>
+            
+            <div data-role="content" data-theme="a">
+                <ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">Netzwerkeinstellungen</li>
+                    <li>
+                    	<label for="input5">Netzwerkname:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input6">MAC-Adresse:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input7">Zugangspunkt:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                    </li>
+                    <li>
+                    	<label for="select-choice-3" class="select">Max. Bandbreite:</label>
+						<select name="select-choice-3" id="select-choice-3" data-native-menu="false">
+							<option value="Bandbreite1">10 MHz</option>
+							<option value="Bandbreite2">20 MHz</option>
+							<option value="Bandbreite3">30 MHz</option>
+						</select>
+                    </li>
+                    <li data-role="list-divider">Handover</li>
+                    <li>
+                    	<label for="slider">Wiederholungen:</label>
+						<select name="slider-2" id="slider-2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="select-choice-4" class="select">Zielnetz:</label>
+						<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">Netz1</option>
+							<option value="Netz2">Netz2</option>
+							<option value="Netz3">Netz3</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="input8">Time:</label>
+    					<input type="text" name="input8" id="input8" value="DD/MM/YY HH/MM/SS"  />
+                    </li>
+                </ul>                
+            </div> <!-- /content --> 
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-dialog-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-dialog-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+        </div>  <!-- /home/mobility/mobility-dialog-a--> 
+        
+        <!-- Dialog der Unterseite Mobility -->
+        <div data-role="page" id="mobility-dialog-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Optionsmenü</h1>
+                <a href="#mobility-b" class="ui-btn-right" data-role="button" data-icon="check">Save</a>
+            </div>
+            
+            <div data-role="content" data-theme="b">
+                <ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">Netzwerkeinstellungen</li>
+                    <li>
+                    	<label for="input5">Netzwerkname:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input6">MAC-Adresse:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                    </li>
+                    <li>
+                    	<label for="input7">Zugangspunkt:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                    </li>
+                    <li>
+                    	<label for="select-choice-3" class="select">Max. Bandbreite:</label>
+						<select name="select-choice-3" id="select-choice-3" data-native-menu="false">
+							<option value="Bandbreite1">10 MHz</option>
+							<option value="Bandbreite2">20 MHz</option>
+							<option value="Bandbreite3">30 MHz</option>
+						</select>
+                    </li>
+                    <li data-role="list-divider">Handover</li>
+                    <li>
+                    	<label for="slider">Wiederholungen:</label>
+						<select name="slider-2" id="slider-2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="select-choice-4" class="select">Zielnetz:</label>
+						<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">Netz1</option>
+							<option value="Netz2">Netz2</option>
+							<option value="Netz3">Netz3</option>
+						</select>
+                    </li>
+                    <li>
+                    	<label for="input8">Time:</label>
+    					<input type="text" name="input8" id="input8" value="DD/MM/YY HH/MM/SS"  />
+                    </li>
+                </ul>                
+            </div> <!-- /content --> 
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#mobility-dialog-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#mobility-dialog-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+        </div>  <!-- /home/mobility/mobility-dialog-b--> 
+        
+<!----------------------------------------Mobility-Dialog-ENDE---------------------------------------------------------------------->
+       
+        <!-- Start der Unterseite Ethernet -->
+        <div data-role="page" id="ethernet-default">
+        
+        	<div data-role="header">
+            	<h1>Ethernet</h1>
+				<a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#ethernet-default" data-icon="back">Undo</a></li>
+						<li><a href="#ethernet-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            </div>
+            
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                		<li><a href="#ethernet-default">Aktivieren</a></li>
+                    	<li><a href="#ethernet-default">Deaktivieren</a></li>
+                	</ul>
+                </div>
+
+                <div data-role="controlgroup" data-type="horizontal">
+					<input type="search" name="searchbar-4" id="searchbar-4" value="Gib einen Suchbegriff ein" />
+				</div>
+            	<ul data-role="listview">
+                	<li data-role="list-divider">
+                    <select name="select-choice-7" id="select-choice-7" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz2">Adresse</option>
+						<option value="Netz3">Netzmaske</option>
+						<option value="Netz4">Gateway</option>
+                        <option value="Netz5">zuletzt verwendet</option>
+					</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#ethernet-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#ethernet-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->         
+        </div> <!-- /home/ethernet-default -->
+        
+        <!-- Start der Unterseite Ethernet -->
+        <div data-role="page" id="ethernet-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Ethernet</h1>
+				<a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#ethernet-a" data-icon="back">Undo</a></li>
+						<li><a href="#ethernet-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            </div>
+            
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                		<li><a href="#ethernet-a">Aktivieren</a></li>
+                    	<li><a href="#ethernet-a">Deaktivieren</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="a">
+    				<input type="search" name="searchbar-5" id="searchbar-5" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview"  data-theme="a">
+                	<li data-role="list-divider">
+                    	<select name="select-choice-8" id="select-choice-8" data-native-menu="false">
+							<option value="Netz1">Name</option>
+                        	<option value="Netz2">Adresse</option>
+							<option value="Netz3">Netzmaske</option>
+							<option value="Netz4">Gateway</option>
+                        	<option value="Netz5">zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#ethernet-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#ethernet-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->         
+        </div> <!-- /home/ethernet-a -->
+        
+        <!-- Start der Unterseite Ethernet -->
+        <div data-role="page" id="ethernet-b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Ethernet</h1>
+				<a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#ethernet-b" data-icon="back">Undo</a></li>
+						<li><a href="#ethernet-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            </div>
+            
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                		<li><a href="#ethernet-b">Aktivieren</a></li>
+                    	<li><a href="#ethernet-b">Deaktivieren</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-6" id="searchbar-6" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">
+                    	<select name="select-choice-8" id="select-choice-8" data-native-menu="false">
+							<option value="Netz1">Name</option>
+                        	<option value="Netz2">Adresse</option>
+							<option value="Netz3">Netzmaske</option>
+							<option value="Netz4">Gateway</option>
+                        	<option value="Netz5">zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#ethernet-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#ethernet-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->         
+        </div> <!-- /home/ethernet-b -->
+        
+<!----------------------------------------Ethernet-Seite-ENDE---------------------------------------------------------------------->  
+              
+        <!-- Start der Unterseite WLAN1 -->
+        <div data-role="page" id="wlan-tab1-default">
+        
+        	<div data-role="header">
+            	<h1>WLAN-Networks</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab1-default" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab1-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul> <!-- class="ui-btn-active" data-theme="e"-->
+                		<li><a href="#wlan-tab1-default" data-theme="e">Networks</a></li>
+                    	<li><a href="#wlan-tab2-default">Config</a></li>
+                        <li><a href="#wlan-tab3-default">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-default">Disconnect</a></li>
+                    	<li><a href="#wlan-tab1-default">Activate</a></li>
+                        <li><a href="#wlan-tab1-default">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-2" id="searchbar-2" value="Gib einen Suchbegriff ein"/>
+    				<input type="text" name="input4" id="input4" value="Status"  />
+				</div>
+            	<ul data-role="listview">
+                	<li data-role="list-divider">
+                		<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">SSID</option>
+                        	<option value="Netz1">RSSI</option>
+							<option value="Netz2">Channel</option>
+							<option value="Netz3">Infrastructure</option>
+                       	 	<option value="Netz3">Auth</option>
+                        	<option value="Netz3">Conn</option>
+                        	<option value="Netz3">Encrypt</option>
+                        	<option value="Netz3">Bitrate</option>
+						</select>
+                	</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab1-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab1-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer --> 
+        </div> <!-- /home/wlan-tab1-default -->
+        
+        <!-- Start der Unterseite WLAN1 -->
+        <div data-role="page" id="wlan-tab1-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>WLAN-Networks</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab1-a" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab1-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul> <!-- class="ui-btn-active" data-theme="e"-->
+                		<li><a href="#wlan-tab1-a" data-theme="e">Networks</a></li>
+                    	<li><a href="#wlan-tab2-a">Config</a></li>
+                        <li><a href="#wlan-tab3-a">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                		<li><a href="#wlan-tab1-a">Disconnect</a></li>
+                    	<li><a href="#wlan-tab1-a">Activate</a></li>
+                        <li><a href="#wlan-tab1-a">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="a">
+    				<input type="search" name="searchbar-2" id="searchbar-2" value="Gib einen Suchbegriff ein" data-theme="b"/>
+    				<input type="text" name="input4" id="input4" value="Status"  />
+				</div>
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">
+                		<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">SSID</option>
+                        	<option value="Netz1">RSSI</option>
+							<option value="Netz2">Channel</option>
+							<option value="Netz3">Infrastructure</option>
+                       	 	<option value="Netz3">Auth</option>
+                        	<option value="Netz3">Conn</option>
+                        	<option value="Netz3">Encrypt</option>
+                        	<option value="Netz3">Bitrate</option>
+						</select>
+                	</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain" data-theme="a">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab1-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab1-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab1-a -->
+        
+        <!-- Start der Unterseite WLAN1 -->
+        <div data-role="page" id="wlan-tab1-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>WLAN-Networks</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab1-b" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab1-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul> <!-- class="ui-btn-active" data-theme="e"-->
+                		<li><a href="#wlan-tab1-b" data-theme="e">Networks</a></li>
+                    	<li><a href="#wlan-tab2-b">Config</a></li>
+                        <li><a href="#wlan-tab3-b">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                		<li><a href="#wlan-tab1-b">Disconnect</a></li>
+                    	<li><a href="#wlan-tab1-b">Activate</a></li>
+                        <li><a href="#wlan-tab1-b">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="b">
+    				<input type="search" name="searchbar-2" id="searchbar-2" value="Gib einen Suchbegriff ein" data-theme="b" />
+    				<input type="text" name="input4" id="input4" value="Status"  />
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">
+                		<select name="select-choice-4" id="select-choice-4" data-native-menu="false">
+							<option value="Netz1">SSID</option>
+                        	<option value="Netz1">RSSI</option>
+							<option value="Netz2">Channel</option>
+							<option value="Netz3">Infrastructure</option>
+                       	 	<option value="Netz3">Auth</option>
+                        	<option value="Netz3">Conn</option>
+                        	<option value="Netz3">Encrypt</option>
+                        	<option value="Netz3">Bitrate</option>
+						</select>
+                	</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+               </ul>
+               <div data-role="fieldcontain" data-theme="b">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab1-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab1-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab1-b -->
+
+<!---------------------WLAN-TAB1-SEITEN-ENDE------------------------------------------------------>
+
+        <!-- Start der Unterseite WLAN2 -->
+        <div data-role="page" id="wlan-tab2-default">
+        
+        	<div data-role="header">
+            	<h1>WLAN-Config</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab2-default" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab2-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-default" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-default" data-theme="e">Config</a></li>
+                        <li><a href="#wlan-tab3-default">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab2-default">Disconnect</a></li>
+                    	<li><a href="#wlan-tab2-default">Activate</a></li>
+                        <li><a href="#wlan-tab2-default">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-3" id="searchbar-3" value="Gib einen Suchbegriff ein" />
+    				<input type="text" name="input5" id="input5" value="Status"  />
+				</div>
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab2-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab2-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab2-default -->
+
+		<!-- Start der Unterseite WLAN2 -->
+        <div data-role="page" id="wlan-tab2-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>WLAN-Config</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab2-a" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab2-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-a" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-a" data-theme="e">Config</a></li>
+                        <li><a href="#wlan-tab3-a">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                		<li><a href="#wlan-tab2-a">Disconnect</a></li>
+                    	<li><a href="#wlan-tab2-a">Activate</a></li>
+                        <li><a href="#wlan-tab2-a">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="a">
+    				<input type="search" name="searchbar-3" id="searchbar-3" value="Gib einen Suchbegriff ein" data-theme="b"/>
+    				<input type="text" name="input5" id="input5" value="Status"  />
+				</div>
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain" data-theme="a">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab2-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab2-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab2-a -->
+        
+        <!-- Start der Unterseite WLAN2 -->
+        <div data-role="page" id="wlan-tab2-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>WLAN-Config</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab2-b" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab2-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-b" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-b" data-theme="e">Config</a></li>
+                        <li><a href="#wlan-tab3-b">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                		<li><a href="#wlan-tab2-b">Disconnect</a></li>
+                    	<li><a href="#wlan-tab2-b">Activate</a></li>
+                        <li><a href="#wlan-tab2-b">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="b">
+    				<input type="search" name="searchbar-3" id="searchbar-3" value="Gib einen Suchbegriff ein" data-theme="b"/>
+    				<input type="text" name="input5" id="input5" value="Status"  />
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain" data-theme="b">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+               </div> 
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab2-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab2-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab2-b -->
+<!-------------------------------WLAN-TAB2-SEITEN-ENDE------------------------------------------->
+        <!-- Start der Unterseite WLAN3 -->
+        <div data-role="page" id="wlan-tab3-default">
+        
+        	<div data-role="header">
+            	<h1>WLAN-Status</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab3-default" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab3-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-default" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-default" data-direction="reverse">Config</a></li>
+                        <li><a href="#wlan-tab3-default" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab3-default">Disconnect</a></li>
+                    	<li><a href="#wlan-tab3-default">Activate</a></li>
+                        <li><a href="#wlan-tab3-default">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain">
+                	<ul data-role="listview">
+                		<li data-role="list-divider">Statusgrafik</li>
+                    	<li><h1>Grafik</h1></li>
+               		</ul> 
+                </div>
+            	<div data-role="fieldcontain" >
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab3-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab3-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab3-default -->
+        
+        <!-- Start der Unterseite WLAN3 -->
+        <div data-role="page" id="wlan-tab3-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>WLAN-Status</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab3-a" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab3-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-a" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-a" data-direction="reverse">Config</a></li>
+                        <li><a href="#wlan-tab3-a" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                		<li><a href="#wlan-tab3-a">Disconnect</a></li>
+                    	<li><a href="#wlan-tab3-a">Activate</a></li>
+                        <li><a href="#wlan-tab3-a">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                	<ul data-role="listview" data-theme="a">
+                		<li data-role="list-divider">Statusgrafik</li>
+                    	<li><h1>Grafik</h1></li>
+               		</ul> 
+                </div>
+                
+            	<div data-role="fieldcontain" data-theme="a">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab3-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab3-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab3-a -->
+        
+        <!-- Start der Unterseite WLAN3 -->
+        <div data-role="page" id="wlan-tab3-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>WLAN-Status</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#wlan-tab3-b" data-icon="back">Undo</a></li>
+						<li><a href="#wlan-tab3-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                		<li><a href="#wlan-tab1-b" data-direction="reverse">Networks</a></li>
+                    	<li><a href="#wlan-tab2-b" data-direction="reverse">Config</a></li>
+                        <li><a href="#wlan-tab3-b" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+            </div>
+
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                		<li><a href="#wlan-tab3-b">Disconnect</a></li>
+                    	<li><a href="#wlan-tab3-b">Activate</a></li>
+                        <li><a href="#wlan-tab3-b">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                	<ul data-role="listview" data-theme="b">
+                		<li data-role="list-divider">Statusgrafik</li>
+                    	<li><h1>Grafik</h1></li>
+               		</ul> 
+                </div>              
+            	<div data-role="fieldcontain" data-theme="b">
+                    <select name="select-choice-6" id="select-choice-6" data-native-menu="false">
+						<option value="Adapter1">Adapter1</option>
+                        <option value="Adapter2">Adapter2</option>
+						<option value="Adapter3">Adapter3</option>
+					</select>
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#wlan-tab3-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#wlan-tab3-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/wlan-tab3-b -->
+        
+<!-------------------------------WLAN-TAB3-SEITEN-ENDE------------------------------------------->
+
+        <!-- Start der Unterseite UMTS1 -->
+        <div data-role="page" id="umts-tab1-default" data-add-back-btn="false">
+        
+        	<div data-role="header">
+            	<h1>UMTS-Config</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab1-default" data-icon="back">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+						<li><a href="#umts-tab1-default" data-icon="forward">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					</ul>
+				</div>
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-default" data-theme="e">Config</a></li>
+                        <li><a href="#umts-tab2-default">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                        <li><a href="#umts-tab1-default">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-4" id="searchbar-4" value="Gib einen Suchbegriff ein" />
+				</div>
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain">
+                    	<label for="input5">Treiber:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-icon="gear">Menu</a></li>
+                    	<li><a href="#umts-tab1-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab1-default -->
+        
+        <!-- Start der Unterseite UMTS1 -->
+        <div data-role="page" id="umts-tab1-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>UMTS-Config</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab1-a" data-icon="back">Undo</a></li>
+						<li><a href="#umts-tab1-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-a" data-theme="e">Config</a></li>
+                        <li><a href="#umts-tab2-a">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                        <li><a href="#umts-tab1-a">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="a">
+    				<input type="search" name="searchbar-4" id="searchbar-4" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                <div data-role="fieldcontain" data-theme="a">
+                    	<label for="input5">Treiber:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#umts-tab1-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab1-a -->
+        
+        <!-- Start der Unterseite UMTS1 -->
+        <div data-role="page" id="umts-tab1-b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>UMTS-Config</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab1-b" data-icon="back">Undo</a></li>
+						<li><a href="#umts-tab1-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-b" data-theme="e">Config</a></li>
+                        <li><a href="#umts-tab2-b">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                        <li><a href="#umts-tab1-b">Connect</a></li>
+                	</ul>
+                </div>
+            	<div data-role="fieldcontain" data-theme="b">
+    				<input type="search" name="searchbar-4" id="searchbar-4" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">
+                		<select name="select-choice-5" id="select-choice-5" data-native-menu="false">
+						<option value="Netz1">Name</option>
+                        <option value="Netz1">RSS</option>
+						<option value="Netz2">Adresse</option>
+						<option value="Netz3">Gateway</option>
+                        <option value="Netz3">Netzmaske</option>
+                        <option value="Netz3">Zuletzt verwendet</option>
+						</select>
+                    </li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+                
+                <div data-role="fieldcontain" data-theme="b">
+                    	<label for="input5">Treiber:</label>
+    					<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#umts-tab1-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab1-b -->
+        
+<!-------------------------------UMTS-TAB1-SEITEN-ENDE------------------------------------------->
+        
+        <!-- Start der Unterseite UMTS-2 -->
+        <div data-role="page" id="umts-tab2-default">
+        
+        	<div data-role="header">
+            	<h1>UMTS-Status</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab2-default" data-icon="back">Undo</a></li>
+						<li><a href="#umts-tab2-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-default" data-direction="reverse">Config</a></li>
+                        <li><a href="#umts-tab2-default" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+            
+			<div data-role="content">
+            	<div data-role="navbar">
+                	<ul>
+                        <li><a href="#umts-tab2-default">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain">
+                	<ul data-role="listview" >
+                    	<li data-role="list-divider">Statusgrafik</li>
+                		<li><h1>Grafik</h1></li>
+                	</ul>
+                </div>  
+                <div data-role="fieldcontain">    
+                    <label for="input5">Treiber:</label>
+    				<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab2-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#umts-tab2-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab2-default -->
+        
+        <!-- Start der Unterseite UMTS-2 -->
+        <div data-role="page" id="umts-tab2-a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>UMTS-Status</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab2-a" data-icon="back">Undo</a></li>
+						<li><a href="#umts-tab2-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-a" data-direction="reverse">Config</a></li>
+                        <li><a href="#umts-tab2-a" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+            
+			<div data-role="content" data-theme="a">
+            	<div data-role="navbar" data-theme="a">
+                	<ul>
+                        <li><a href="#umts-tab2-a">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                	<ul data-role="listview" data-theme="a">
+                    	<li data-role="list-divider">Statusgrafik</li>
+                		<li><h1>Grafik</h1></li>
+                	</ul>
+                </div>  
+                <div data-role="fieldcontain" data-theme="a">    
+                    <label for="input5">Treiber:</label>
+    				<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="a">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab2-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#umts-tab2-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab2-a -->
+        
+        <!-- Start der Unterseite UMTS-2 -->
+        <div data-role="page" id="umts-tab2-b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>UMTS-Status</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#umts-tab2-b" data-icon="back">Undo</a></li>
+						<li><a href="#umts-tab2-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab1-b" data-direction="reverse">Config</a></li>
+                        <li><a href="#umts-tab2-b" data-theme="e">Status</a></li>
+                	</ul>
+                </div>
+			</div>
+            
+			<div data-role="content" data-theme="b">
+            	<div data-role="navbar" data-theme="b">
+                	<ul>
+                        <li><a href="#umts-tab2-b">Connect</a></li>
+                	</ul>
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                	<ul data-role="listview" data-theme="b">
+                    	<li data-role="list-divider">Statusgrafik</li>
+                		<li><h1>Grafik</h1></li>
+                	</ul>
+                </div>  
+                <div data-role="fieldcontain" data-theme="b">    
+                    <label for="input5">Treiber:</label>
+    				<input type="text" name="input5" id="input5" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    	<label for="input6">Signalqualität:</label>
+    					<input type="text" name="input6" id="input6" value=""  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    	<label for="input7">Anbieter:</label>
+    					<input type="text" name="input7" id="input7" value=""  />
+                </div>
+            </div>
+            
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#umts-tab2-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#umts-tab2-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/umts-tab2-b -->
+        
+        <!-------------------------------UMTS-TAB2-SEITEN-ENDE------------------------------------------->
+        
+        <!-- Start der Unterseite Experiments-1 -->
+        <div data-role="page" id="experiments-tab1-default">
+        
+        	<div data-role="header">
+            	<h1>Experiments-Eigenschaften</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab1-default" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab1-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-default" data-theme="e">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-default">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content">
+            
+            	<textarea cols="40" rows="8" name="textarea" id="textarea">Hier stehen die Eigenschaften</textarea>
+            	
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-5" id="searchbar-5" value="Gib einen Suchbegriff ein" />
+				</div>
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			
+            <div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab1-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab1-default -->
+        
+        <!-- Start der Unterseite Experiments-1 -->
+        <div data-role="page" id="experiments-tab1-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Experiments-Eigenschaften</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab1-a" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab1-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-a" data-theme="e">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-a">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content" data-theme="a">
+            
+            	<textarea cols="40" rows="8" name="textarea" id="textarea">Hier stehen die Eigenschaften</textarea>
+            	
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-5" id="searchbar-5" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab1-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab1-a -->
+        
+        <!-- Start der Unterseite Experiments-1 -->
+        <div data-role="page" id="experiments-tab1-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Experiments-Eigenschaften</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab1-b" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab1-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-b" data-theme="e">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-b">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content" data-theme="b">
+            
+            	<textarea cols="40" rows="8" name="textarea" id="textarea">Hier stehen die Eigenschaften</textarea>
+            	
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-5" id="searchbar-5" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			
+            <div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab1-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab1-b -->
+        
+        <!------------------------Experiments-Tab1-ENDE----------------------------------->
+        
+        <!-- Start der Unterseite Experiments-2 -->
+        <div data-role="page" id="experiments-tab2-default">
+        
+        	<div data-role="header">
+            	<h1>Experiments-Verlauf</h1>
+                <a href="#home-default" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab2-default" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab2-default" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-default" data-direction="reverse">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-default" data-theme="e">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content">
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">Verlaufsgrafik</li>
+                    <li><h1>Grafik</h1></li>
+                </ul>
+                
+            	<div data-role="fieldcontain">
+    				<input type="search" name="searchbar-6" id="searchbar-6" value="Gib einen Suchbegriff ein" />
+				</div>
+            	<ul data-role="listview" >
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			<div style="bottom:0px;" data-role="footer" data-position="fixed">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab2-default" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-default" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab2-default" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab2-default -->
+        
+        <!-- Start der Unterseite Experiments-2 -->
+        <div data-role="page" id="experiments-tab2-a" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+            	<h1>Experiments-Verlauf</h1>
+                <a href="#home-a" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab2-a" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab2-a" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-a" data-direction="reverse">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-a" data-theme="e">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content" data-theme="a">
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">Verlaufsgrafik</li>
+                    <li><h1>Grafik</h1></li>
+                </ul>
+                
+            	<div data-role="fieldcontain" data-theme="a">
+    				<input type="search" name="searchbar-6" id="searchbar-6" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="a">
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			<div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="a">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab2-a" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-a" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab2-a" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab2-a -->
+        
+        <!-- Start der Unterseite Experiments-2 -->
+        <div data-role="page" id="experiments-tab2-b" data-theme="b">
+        
+        	<div data-role="header" data-theme="b">
+            	<h1>Experiments-Verlauf</h1>
+                <a href="#home-b" data-icon="home" class="ui-btn-left">Home</a>
+				<!--
+				<div data-role="navbar" class="ui-btn-right">
+                	<ul>
+						<li><a href="#experiments-tab2-b" data-icon="back">Undo</a></li>
+						<li><a href="#experiments-tab2-b" data-icon="forward">Redo</a></li>
+					</ul>
+				</div>
+				-->
+                <div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab1-b" data-direction="reverse">Eigenschaften</a></li>
+                        <li><a href="#experiments-tab2-b" data-theme="e">Verlauf</a></li>
+                	</ul>
+                </div>
+            </div>
+			<div data-role="content" data-theme="b">
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">Verlaufsgrafik</li>
+                    <li><h1>Grafik</h1></li>
+                </ul>
+                
+            	<div data-role="fieldcontain" data-theme="b">
+    				<input type="search" name="searchbar-6" id="searchbar-6" value="Gib einen Suchbegriff ein" data-theme="b"/>
+				</div>
+            	<ul data-role="listview" data-theme="b">
+                	<li data-role="list-divider">Experimente</li>
+                	<li>Zeile 1</li>
+                    <li>Zeile 2</li>
+                    <li>Zeile 3</li>
+                </ul>
+            </div>
+			<div style="bottom:0px;" data-role="footer" data-position="fixed" data-theme="b">
+            	<div data-role="navbar">
+                	<ul>
+                    	<li><a href="#experiments-tab2-b" data-icon="plus">Open</a></li>
+                        <li><a href="#setup-b" data-rel="dialog" data-icon="gear">Setup</a></li>
+                    	<li><a href="#experiments-tab2-b" data-icon="delete">Exit</a></li>
+                    </ul>
+                </div>  <!-- /navbar -->
+            </div> <!-- /footer -->
+        </div> <!-- /home/experiments-tab2-b -->
+</body>
+</html>
